@@ -11,7 +11,18 @@ public class HelloController {
 
     @CrossOrigin
     @RequestMapping("/hello")
-    public Map<String, String> index() {
+    public String index() {
+        Map<String, String> map = new HashMap<>();
+        // map.put("123","123");
+        // map.put("223","223");
+        // map.put("323","323");
+        // map.put("423","423");
+        return "Hello World";
+    }
+
+    @CrossOrigin
+    @RequestMapping("/helloMap")
+    public Map<String, String> indexMap() {
         Map<String, String> map = new HashMap<>();
         map.put("123","123");
         map.put("223","223");
